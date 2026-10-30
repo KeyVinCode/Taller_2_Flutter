@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
-// import '../pages/dashboard_page.dart';
-// import '../pages/forgot_password_page.dart';
+import '../presentation/pages/dashboard_page.dart';
+import '../presentation/pages/forgot_password_page.dart';
 import '../presentation/pages/login_page.dart';
-// import '../pages/register_page.dart';
-// import '../pages/splash_page.dart';
+import '../presentation/pages/register_pages.dart';
+import '../presentation/pages/splash_page.dart';
 
 /// Aquí se centralizan los nombres de las pantallas (rutas).
 class AppRoutes {
@@ -18,10 +18,10 @@ class AppRoutes {
 
   /// Tabla que relaciona cada nombre con su pantalla.
   static Map<String, WidgetBuilder> get routes => {
-        // splash: (context) => const SplashPage(),
+        splash: (context) => const SplashPage(),
         login: (context) => const LoginPage(),
-      //   register: (context) => const RegisterPage(),
-      //   forgotPassword: (context) => const ForgotPasswordPage(),
-      //   dashboard: (context) => const DashboardPage(),
+        register: (context) => const RegisterPage(),
+        forgotPassword: (context) => const ForgotPasswordPage(),
+        dashboard: (context) => const DashboardPage(),
       };
 }
